@@ -5,3 +5,5 @@ node_modules/@next/swc-darwin-arm64/next-swc.darwin-arm64.node
 .git/objects/pack/pack-f67d29c9df2bb88de6922d4d8e4687744d041a7c.pack
 .next
 node_modules
+node_modules/
+node_modules/
