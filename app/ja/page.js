@@ -137,7 +137,7 @@ export default function JaPage() {
                   },
                   {
                     title: "わかりやすい解説",
-                    desc: "日本語で丁寧に解説するので、英語が苦手な方でも安心"
+                    desc: "学習者が苦手とするところを熟知した日本人講師が、丁寧に解説するので、英語が苦手な方でも安心"
                   },
                   {
                     title: "自宅で受講可能",
@@ -173,7 +173,7 @@ export default function JaPage() {
                 今すぐ申し込む
               </Link>
               <a
-                href="mf.nozawa.day@gmail.com"
+                href="mailto:mf.nozawa.day@gmail.com"
                 className="px-8 py-4 bg-blue-500 text-white rounded-xl shadow-lg hover:shadow-xl transition-all font-bold hover:scale-105 transform"
               >
                 メールでお問い合わせ
