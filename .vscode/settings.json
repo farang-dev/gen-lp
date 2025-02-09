@@ -1,5 +1,5 @@
 {
-  "workbench.activityBar.location": "left",
+  "workbench.activityBar.location": "default",
   "workbench.startupEditor": "welcomePage",
   "workbench.panel.defaultLocation": "left",
   "workbench.sideBar.location": "left"
