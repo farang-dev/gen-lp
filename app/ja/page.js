@@ -18,7 +18,7 @@ export default function JaPage() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h1 className="text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
-              超集中型 Englishブートキャンプ
+              超集中型 English Bootcamp
             </h1>
             <p className="text-2xl text-gray-700">
               9回のレッスンで英語文法を完全マスター!
@@ -92,7 +92,7 @@ export default function JaPage() {
               <ul className="space-y-4">
                 {[
                   "マインドセットと環境設定",
-                  "英語の基本構造(SVO, SVOO, SVC, SVOC)",
+                  "英語の基本構造(SV, SVO, SVOO, SVC, SVOC)",
                   "時制のマスター",
                   "助動詞の完全理解",
                   "前置詞のイメージ理解",

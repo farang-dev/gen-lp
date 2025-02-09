@@ -92,7 +92,7 @@ export default function EnPage() {
               <ul className="space-y-4">
                 {[
                   "Mindset and Environment Setting",
-                  "Basic Structures (SVO, SVOO, SVC, SVOC)",
+                  "Basic Structures (SV, SVO, SVOO, SVC, SVOC)",
                   "Mastering Tenses",
                   "Auxiliary Verbs Explained",
                   "Prepositions Visualized",
