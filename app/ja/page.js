@@ -141,7 +141,7 @@ export default function JaPage() {
                   },
                   {
                     title: "自宅で受講可能",
-                    desc: "Google Meetsを使用するので、通学の時間を節約できます"
+                    desc: "Google Meetsを使用するので、どこからでもレッスンを受けられます"
                   }
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-4">
