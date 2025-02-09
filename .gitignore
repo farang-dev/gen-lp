@@ -1,1 +1,7 @@
-.vercel
+node_modules/next/dist/compiled/next-server/server.runtime.prod.js.map
+node_modules/@img/sharp-libvips-darwin-arm64/lib/libvips-cpp.42.dylib
+node_modules/@next/swc-darwin-arm64/next-swc.darwin-arm64.node
+.next/cache/webpack/client-development-fallback/0.pack.gz
+.git/objects/pack/pack-f67d29c9df2bb88de6922d4d8e4687744d041a7c.pack
+.next
+node_modules
