@@ -3,9 +3,7 @@
 import Link from 'next/link';
 
 export default function JaPage() {
-  const handleCheckout = () => {
-    window.location.href = 'https://buy.stripe.com/test_7sIdTW6twfSIbmMfYY';
-  };
+  const checkoutLink = 'https://buy.stripe.com/test_7sIdTW6twfSIbmMfYY';
 
   const ClockIcon = () => (
     <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -45,11 +43,11 @@ export default function JaPage() {
 
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h1 className="text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
-              超集中英語ブートキャンプ
+            <h1 className="text-5xl font-bold mb-6 pb-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
+              超集中型 English Bootcamp
             </h1>
             <p className="text-2xl text-gray-700">
-              9回のレッスンで英語文法を完全マスター!
+              9回のレッスンで英文法を完全マスター!
             </p>
           </div>
 
@@ -112,7 +110,7 @@ export default function JaPage() {
               <ul className="space-y-4">
                 {[
                   "マインドセットと環境設定",
-                  "英語の基本構造(SVO, SVOO, SVC, SVOC)",
+                  "英語の基本構造(SV, SVO, SVOO, SVC, SVOC)",
                   "時制のマスター",
                   "助動詞の完全理解",
                   "前置詞のイメージ理解",
@@ -162,18 +160,20 @@ export default function JaPage() {
 
           <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl shadow-xl p-8 text-white text-center">
             <h3 className="text-2xl font-bold mb-4">お申し込み・お問い合わせ</h3>
-            <p className="mb-8 opacity-90">
+            <p className="mb-4 opacity-90">
               ご質問やご相談がある方は、お気軽にお問い合わせください
             </p>
+             <div className="text-2xl font-bold mb-4">受講料(計9回): 50,000円</div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button
-                onClick={handleCheckout}
+              <Link
+                href={checkoutLink}
+                target="_blank"
                 className="px-8 py-4 bg-white text-blue-600 rounded-xl shadow-lg hover:shadow-xl transition-all font-bold hover:scale-105 transform"
               >
-                今すぐ申し込む (50,000円)
-              </button>
+                今すぐ申し込む
+              </Link>
               <a
-                href="mailto:info@englishbootcamp.jp"
+                href="mf.nozawa.day@gmail.com"
                 className="px-8 py-4 bg-blue-500 text-white rounded-xl shadow-lg hover:shadow-xl transition-all font-bold hover:scale-105 transform"
               >
                 メールでお問い合わせ

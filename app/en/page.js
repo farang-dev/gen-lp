@@ -3,9 +3,7 @@
 import Link from 'next/link';
 
 export default function EnPage() {
-  const handleCheckout = () => {
-    window.location.href = 'https://buy.stripe.com/test_7sIdTW6twfSIbmMfYY';
-  };
+  const checkoutLink = 'https://buy.stripe.com/test_7sIdTW6twfSIbmMfYY';
 
   const ClockIcon = () => (
     <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -162,18 +160,20 @@ export default function EnPage() {
 
           <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl shadow-xl p-8 text-white text-center">
             <h3 className="text-2xl font-bold mb-4">Sign Up & Contact</h3>
-            <p className="mb-8 opacity-90">
+            <p className="mb-4 opacity-90">
               Have questions? Feel free to reach out to us
             </p>
+             <div className="text-2xl font-bold mb-4">Price: ¥50,000</div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button
-                onClick={handleCheckout}
+              <Link
+                href={checkoutLink}
+                target="_blank"
                 className="px-8 py-4 bg-white text-blue-600 rounded-xl shadow-lg hover:shadow-xl transition-all font-bold hover:scale-105 transform"
               >
-                Enroll Now (¥50,000)
-              </button>
+                Enroll Now
+              </Link>
               <a
-                href="mailto:info@englishbootcamp.jp"
+                href="mf.nozawa.day@gmail.com"
                 className="px-8 py-4 bg-blue-500 text-white rounded-xl shadow-lg hover:shadow-xl transition-all font-bold hover:scale-105 transform"
               >
                 Contact via Email
