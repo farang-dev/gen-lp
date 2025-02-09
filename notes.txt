@@ -1,0 +1,60 @@
+## Modern Syntax Explanation for Junior Developers
+
+This project uses several modern JavaScript and Next.js features. Here's a brief overview:
+
+### 1. ES Modules (import/export)
+
+We use `import` and `export` statements for managing dependencies between files. This is part of the ES Modules standard.
+
+Example:
+
+```javascript
+import React from 'react';
+export default function MyComponent() { ... }
+```
+
+Reference: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+
+### 2. Next.js App Router
+
+This project uses the Next.js App Router, which is located in the `app/` directory. It uses a file-based routing system.
+
+-   `app/page.js`: Defines the root route (`/`).
+-   `app/en/page.js`: Defines the `/en` route.
+-   `app/ja/page.js`: Defines the `/ja` route.
+
+Reference: [https://nextjs.org/docs/app](https://nextjs.org/docs/app)
+
+### 3. TypeScript
+
+This project uses TypeScript, which adds static typing to JavaScript. This helps catch errors early and improves code maintainability.
+
+Example:
+
+```typescript
+function add(a: number, b: number): number {
+  return a + b;
+}
+```
+
+Reference: [https://www.typescriptlang.org/](https://www.typescriptlang.org/)
+
+### 4. Tailwind CSS
+
+This project uses Tailwind CSS, a utility-first CSS framework. It allows you to style elements by applying pre-defined CSS classes.
+
+Example:
+
+```html
+<button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+  Click me
+</button>
+```
+
+Reference: [https://tailwindcss.com/](https://tailwindcss.com/)
+
+### 5. Next.js Static Export
+
+The project is configured to export as static HTML, which is suitable for deployment to platforms like GitHub Pages. This is configured in `next.config.js` with the `output: 'export'` option.
+
+Reference: [https://nextjs.org/docs/app/building-your-application/deploying/static-exports](https://nextjs.org/docs/app/building-your-application/deploying/static-exports)
