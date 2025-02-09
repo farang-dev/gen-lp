@@ -3,6 +3,34 @@
 import Link from 'next/link';
 
 export default function JaPage() {
+  const handleCheckout = () => {
+    window.location.href = 'https://buy.stripe.com/test_7sIdTW6twfSIbmMfYY';
+  };
+
+  const ClockIcon = () => (
+    <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+  );
+
+  const CalendarIcon = () => (
+    <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+    </svg>
+  );
+
+  const VideoIcon = () => (
+    <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+    </svg>
+  );
+
+  const CurrencyIcon = () => (
+    <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+  );
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4 py-8">
@@ -18,7 +46,7 @@ export default function JaPage() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h1 className="text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
-              超集中型 English Bootcamp
+              超集中英語ブートキャンプ
             </h1>
             <p className="text-2xl text-gray-700">
               9回のレッスンで英語文法を完全マスター!
@@ -37,9 +65,7 @@ export default function JaPage() {
                 <div className="space-y-4">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
-                      <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
+                      <ClockIcon />
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900">セッション時間</h3>
@@ -48,9 +74,7 @@ export default function JaPage() {
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
-                      <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                      </svg>
+                      <CalendarIcon />
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900">スケジュール</h3>
@@ -61,9 +85,7 @@ export default function JaPage() {
                 <div className="space-y-4">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
-                      <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                      </svg>
+                      <VideoIcon />
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900">形式</h3>
@@ -72,13 +94,11 @@ export default function JaPage() {
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
-                      <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
+                      <CurrencyIcon />
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900">時間</h3>
-                      <p className="text-gray-600">日本時間 午後8時〜9時30分</p>
+                      <p className="text-gray-600">午後8時〜9時30分</p>
                     </div>
                   </div>
                 </div>
@@ -92,7 +112,7 @@ export default function JaPage() {
               <ul className="space-y-4">
                 {[
                   "マインドセットと環境設定",
-                  "英語の基本構造(SV, SVO, SVOO, SVC, SVOC)",
+                  "英語の基本構造(SVO, SVOO, SVC, SVOC)",
                   "時制のマスター",
                   "助動詞の完全理解",
                   "前置詞のイメージ理解",
@@ -118,11 +138,11 @@ export default function JaPage() {
                     desc: "忙しい社会人でも無理なく続けられる短期集中型プログラム"
                   },
                   {
-                    title: "丁寧でわかりやすい解説",
+                    title: "わかりやすい解説",
                     desc: "日本語で丁寧に解説するので、英語が苦手な方でも安心"
                   },
                   {
-                    title: "どこからでも受講可能",
+                    title: "自宅で受講可能",
                     desc: "Google Meetsを使用するので、通学の時間を節約できます"
                   }
                 ].map((item, index) => (
@@ -146,12 +166,15 @@ export default function JaPage() {
               ご質問やご相談がある方は、お気軽にお問い合わせください
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-4 bg-white text-blue-600 rounded-xl shadow-lg hover:shadow-xl transition-all font-bold">
-                無料カウンセリングに申し込む
+              <button
+                onClick={handleCheckout}
+                className="px-8 py-4 bg-white text-blue-600 rounded-xl shadow-lg hover:shadow-xl transition-all font-bold hover:scale-105 transform"
+              >
+                今すぐ申し込む (50,000円)
               </button>
               <a
-                href="mf.nozawa.day@gmail.com"
-                className="px-8 py-4 bg-blue-500 text-white rounded-xl shadow-lg hover:shadow-xl transition-all font-bold"
+                href="mailto:info@englishbootcamp.jp"
+                className="px-8 py-4 bg-blue-500 text-white rounded-xl shadow-lg hover:shadow-xl transition-all font-bold hover:scale-105 transform"
               >
                 メールでお問い合わせ
               </a>
